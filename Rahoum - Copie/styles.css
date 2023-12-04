@@ -1,0 +1,162 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+.highlight {
+  animation: blink 5s infinite; /* Adjust the animation duration as needed */
+}
+
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.RAHMA{
+  display: flex;
+  justify-content: space-between;
+}
+header {
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  padding: 2em 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+nav {
+  background-color: #4a90e2;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+.content {
+  padding: 40px 0;
+}
+
+.technologies {
+  background-color: #fff;
+}
+
+.technology {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.technology img {
+  max-width: 27%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.tech-details {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.tech-details h3 {
+  color: #333;
+}
+
+.tech-details p {
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4a90e2;
+}
+
+footer {
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+.rotating-image {
+  max-width: 100px; /* Adjust the size of the rotating image as needed */
+  border-radius: 50%;
+  animation: rotate 20s linear infinite; /* Adjust the animation duration and style as needed */
+}
+
+.logo-container {
+  display: inline-block;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.translating-image {
+  max-width: 30px; /* Adjust the size of the translating image as needed */
+  position: absolute;
+  top: 123%; /* Adjust the starting position from the top */
+  animation: translate 2s linear infinite; /* Adjust the animation duration and style as needed */
+}
+
+@keyframes translate {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+
